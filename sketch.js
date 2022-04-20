@@ -58,12 +58,12 @@ function setup() {
   var MobileVersion = /iPhone|iPad|Android|iPod/i.test(navigator.userAgent)
 
   if(MobileVersion){
-    canw = displayWidth - 80
+    canw = displayWidth + 80
     canh = displayHeight - 10
     createCanvas(canw,canh);
   }
   else{
-    createCanvas(windowWidth - 80,windowHeight);
+    createCanvas(windowWidth + 80,windowHeight);
   }
 
  
